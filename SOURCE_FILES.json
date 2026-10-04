@@ -1,0 +1,814 @@
+[
+  {
+    "file": "account_test.go",
+    "sha256": "f7fd44cfe723fb439ccea056870034823258f14776ec5316f37e1e3bc4a0d30c"
+  },
+  {
+    "file": "account.go",
+    "sha256": "1bfda8894c5dabe21b5f0ef3aa9364711c30f34321511675b6c13dee74510aaa"
+  },
+  {
+    "file": "build.ps1",
+    "sha256": "79331a786edccb5f55278377b24bc5af6a5589d48a01df0152c21dc834310fa4"
+  },
+  {
+    "file": "CORRESPONDING_SOURCE.md",
+    "sha256": "a2799261630c38d5f4f5af137ddaed8d4d7f8276509903dd11382f66119fd00f"
+  },
+  {
+    "file": "delivery_test.go",
+    "sha256": "b60471941b2bbb00c187d0deb3c90cb3d7195a87ea6ac5bfd890a365e7916949"
+  },
+  {
+    "file": "delivery.go",
+    "sha256": "b5e2254d122db94b91528b7a685845090633c22352c7feea0127c3c4d924894c"
+  },
+  {
+    "file": "dependencies/proxy/filippo.io/edwards25519/@v/v1.2.0.info",
+    "sha256": "73c137b2997bc44d976e01eb56251e5191e92cb22457550ecc3427b95191fc14"
+  },
+  {
+    "file": "dependencies/proxy/filippo.io/edwards25519/@v/v1.2.0.mod",
+    "sha256": "7492c767dc361b86e96933ca1790d492c2f7c368c3ec0e00e1050eddad7baa7d"
+  },
+  {
+    "file": "dependencies/proxy/filippo.io/edwards25519/@v/v1.2.0.zip",
+    "sha256": "98f2d3ca9b88daa031b0fb2fb521b7ea386af1fed61b6f445a20bef7fa381c17"
+  },
+  {
+    "file": "dependencies/proxy/github.com/!d!a!t!a-!d!o!g/go-sqlmock/@v/v1.5.2.info",
+    "sha256": "9998c321add372087afa4b7527354bd17eefc2cab256e741c11e813229966726"
+  },
+  {
+    "file": "dependencies/proxy/github.com/!d!a!t!a-!d!o!g/go-sqlmock/@v/v1.5.2.mod",
+    "sha256": "bbda15045dcb1013a5318dfe5a3021e467971da6daf3a2a09399885442fbe53a"
+  },
+  {
+    "file": "dependencies/proxy/github.com/!d!a!t!a-!d!o!g/go-sqlmock/@v/v1.5.2.zip",
+    "sha256": "90fe926f15f778bd06cee8b68a33c2b7f4a28fcdf0ff40888ff30d37b4b52202"
+  },
+  {
+    "file": "dependencies/proxy/github.com/agnivade/levenshtein/@v/v1.2.1.info",
+    "sha256": "ebbd084b7e687872fcb0b67b4f3750a162c05041361c37b0e8db34156c0c8aea"
+  },
+  {
+    "file": "dependencies/proxy/github.com/agnivade/levenshtein/@v/v1.2.1.mod",
+    "sha256": "906aeda3683a94012746e557441b778a4c35c9742565fb63979cbbeef1c252b8"
+  },
+  {
+    "file": "dependencies/proxy/github.com/agnivade/levenshtein/@v/v1.2.1.zip",
+    "sha256": "26bdb12f38a5ca1c45a666e8dea1c409189a383443fa14f4ff04f75af7022534"
+  },
+  {
+    "file": "dependencies/proxy/github.com/andreyvit/diff/@v/v0.0.0-20170406064948-c7f18ee00883.info",
+    "sha256": "62cab783cc6562998104f5bd0d3b5f9c3aa38f1f9e387f242aab6b6eec70d0f1"
+  },
+  {
+    "file": "dependencies/proxy/github.com/andreyvit/diff/@v/v0.0.0-20170406064948-c7f18ee00883.mod",
+    "sha256": "879be5498c39a57e4e344d3975351d8f859383f4b6c93eaa4c4e91bdd75ee3f5"
+  },
+  {
+    "file": "dependencies/proxy/github.com/andreyvit/diff/@v/v0.0.0-20170406064948-c7f18ee00883.zip",
+    "sha256": "d39614ff930006640ec15865bca0bb6bf8e1ed145bccf30bab08b88c1d90f670"
+  },
+  {
+    "file": "dependencies/proxy/github.com/beeper/argo-go/@v/v1.1.2.info",
+    "sha256": "763391132a2ac65c0838d5e928a98f1e18e03c3f4aa4d0023815be2fcd3be935"
+  },
+  {
+    "file": "dependencies/proxy/github.com/beeper/argo-go/@v/v1.1.2.mod",
+    "sha256": "2e9d450ad2e5771734948168def13bd281e2006a7a4c2c98bb5ca868f235ecbd"
+  },
+  {
+    "file": "dependencies/proxy/github.com/beeper/argo-go/@v/v1.1.2.zip",
+    "sha256": "173138aa3a4c9d4a9e6358b1040fdf76b34a90403027fbba67bc7a2b2370e9a3"
+  },
+  {
+    "file": "dependencies/proxy/github.com/coder/websocket/@v/v1.8.15.info",
+    "sha256": "ea771df7db01fd05cfa2763c01367e85ae8f94e47e533f2ba7efd5228c23a8ac"
+  },
+  {
+    "file": "dependencies/proxy/github.com/coder/websocket/@v/v1.8.15.mod",
+    "sha256": "0cab443e389cef98e63828bd7ce82224bf192732a18795581314766eb14ea275"
+  },
+  {
+    "file": "dependencies/proxy/github.com/coder/websocket/@v/v1.8.15.zip",
+    "sha256": "4f1d890bc5131f335737bbb6241e3958758c8774b3e6d1c905f713f604af6209"
+  },
+  {
+    "file": "dependencies/proxy/github.com/coreos/go-systemd/v22/@v/v22.7.0.info",
+    "sha256": "4976f5ae1f80f31f122d2e2aa9ac20e763ae687513821b2dd99008f739d27a7d"
+  },
+  {
+    "file": "dependencies/proxy/github.com/coreos/go-systemd/v22/@v/v22.7.0.mod",
+    "sha256": "502642c96e9d9996d696fcb269ac99aa9f5ab9f3a4d98b21931230af69967140"
+  },
+  {
+    "file": "dependencies/proxy/github.com/coreos/go-systemd/v22/@v/v22.7.0.zip",
+    "sha256": "25c78b5dae5afa61291a8559328007cc77e60dd6747454af5c83423c26cfdfba"
+  },
+  {
+    "file": "dependencies/proxy/github.com/davecgh/go-spew/@v/v1.1.0.info",
+    "sha256": "f955fdb41477f10da6e81526de1ae1c857c578c3aa591fc74852ab3281321f3e"
+  },
+  {
+    "file": "dependencies/proxy/github.com/davecgh/go-spew/@v/v1.1.0.mod",
+    "sha256": "bcb29393251237b79a17b6c19bf29134f43e8f438c3198988fcd461a1cdf05cc"
+  },
+  {
+    "file": "dependencies/proxy/github.com/davecgh/go-spew/@v/v1.1.0.zip",
+    "sha256": "0b5a691aeb8b6af31bd2bb640973ea7e8bf1ed9bc5889da220bf44dc06d9692c"
+  },
+  {
+    "file": "dependencies/proxy/github.com/davecgh/go-spew/@v/v1.1.1.info",
+    "sha256": "73de263267a4545708302d807be60fdb649c5c7b981d25302a638145fba0ec47"
+  },
+  {
+    "file": "dependencies/proxy/github.com/davecgh/go-spew/@v/v1.1.1.mod",
+    "sha256": "bcb29393251237b79a17b6c19bf29134f43e8f438c3198988fcd461a1cdf05cc"
+  },
+  {
+    "file": "dependencies/proxy/github.com/davecgh/go-spew/@v/v1.1.1.zip",
+    "sha256": "6b44a843951f371b7010c754ecc3cabefe815d5ced1c5b9409fb2d697e8a890d"
+  },
+  {
+    "file": "dependencies/proxy/github.com/dchest/siphash/@v/v1.2.3.info",
+    "sha256": "d3fb5bdfc925d8037b34ce49ed0d08502251a45740998255fa18cef9d408dc0f"
+  },
+  {
+    "file": "dependencies/proxy/github.com/dchest/siphash/@v/v1.2.3.mod",
+    "sha256": "24d858afe6f4f3cb23448dbb3326bded5569738cfee2f9559187a29480bd6290"
+  },
+  {
+    "file": "dependencies/proxy/github.com/dchest/siphash/@v/v1.2.3.zip",
+    "sha256": "291faeb3d0f046d82357675347523408e456d2a53b11036163d08120f8127566"
+  },
+  {
+    "file": "dependencies/proxy/github.com/elliotchance/orderedmap/v3/@v/v3.1.0.info",
+    "sha256": "84d85fc9dcbea1be7275ed625834f21857ade5073d7a2c12c871811ad27bbd3c"
+  },
+  {
+    "file": "dependencies/proxy/github.com/elliotchance/orderedmap/v3/@v/v3.1.0.mod",
+    "sha256": "fe1e4c5079f424345628b467ecc1ca396b0295eea9064e51c26f4fdc6c737a3f"
+  },
+  {
+    "file": "dependencies/proxy/github.com/elliotchance/orderedmap/v3/@v/v3.1.0.zip",
+    "sha256": "418fbe9f980398cb04428635bbe9e471580b4b0d2281d6e5fbdda2deb6ac06e6"
+  },
+  {
+    "file": "dependencies/proxy/github.com/golang/protobuf/@v/v1.5.0.info",
+    "sha256": "15205f6d0caee9fe1b002ca1438678752a0b42c8c8bdba5d2993d0532a8d3e1a"
+  },
+  {
+    "file": "dependencies/proxy/github.com/golang/protobuf/@v/v1.5.0.mod",
+    "sha256": "738cbb1de96b67a6238ac3b8081cd8b1bfb0daebcf6c9bbe8cbdb6d73baecd19"
+  },
+  {
+    "file": "dependencies/proxy/github.com/golang/protobuf/@v/v1.5.0.zip",
+    "sha256": "deb3b2ac476a7f74685091fa60c59d50110c7e1d333ea78281422d8441f2411d"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/go-cmp/@v/v0.6.0.info",
+    "sha256": "18c1337e622fd270c158325d02fcdd31865d2777bcd17779449553e82e4a6512"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/go-cmp/@v/v0.6.0.mod",
+    "sha256": "e7c7669d4a1dd589ba3e024ba27f43f293db611fe075ce20d7b884370d63febd"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/go-cmp/@v/v0.6.0.zip",
+    "sha256": "4b4e9bf6c48211080651b491dfb48d68b736c66a305bcf94605606e1ba2eaa4a"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/go-cmp/@v/v0.7.0.info",
+    "sha256": "635bbe64cceaad0e5bbd897a78cac24ca184ea8c91394443cc30ee35be33f649"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/go-cmp/@v/v0.7.0.mod",
+    "sha256": "31c874a1d2a18e62b0550f823ce7a575c8dec7f8fd9d4fa1959bb12d7f7c0f14"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/go-cmp/@v/v0.7.0.zip",
+    "sha256": "64a9ce046f2c320e3783fba0d1f4a15f8a18f0b009b67bf27f7630919db3f539"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/uuid/@v/v1.6.0.info",
+    "sha256": "3703c19d7d948a8bc5354b7e515d5297d3c5a8316958bcdd69eec2a7629513d7"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/uuid/@v/v1.6.0.mod",
+    "sha256": "73da47b6338b00a082fd451aa35a3273d3adc09b8e9bba98dab01091e402af6e"
+  },
+  {
+    "file": "dependencies/proxy/github.com/google/uuid/@v/v1.6.0.zip",
+    "sha256": "d0f02f377217f42702e259684e06441edbf5140dddcc34ba9bea56038b38a6ed"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-colorable/@v/v0.1.14.info",
+    "sha256": "1f9b4d9140f74b73fff3bf72305d1ba8d5d2133a3644e7105dc6e56e4460a301"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-colorable/@v/v0.1.14.mod",
+    "sha256": "c199aee551968c8290b917524e0b232a862790a4831b0ed4cb43687e8c08aa18"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-colorable/@v/v0.1.14.zip",
+    "sha256": "5e0e7925a070bb5bd11b4097e1a7b608167f0217ee83901b44c135f6e5e85c78"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-isatty/@v/v0.0.20.info",
+    "sha256": "20f35d641a047c9e189499356a7ddfaea7b5909d1b32e7c7311002bb55487c32"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-isatty/@v/v0.0.20.mod",
+    "sha256": "1eeabef1b4d98db73c6c2073289163649bc9a044552aca86b9d592fe84eaa1c8"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-isatty/@v/v0.0.20.zip",
+    "sha256": "f2d5f89ca451577e17464b9bb596dc0d0ecececb5eaa63622c41b57cd0b7b8cc"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-sqlite3/@v/v1.14.52.info",
+    "sha256": "cf48e858683b7a3860ca07a9084ccd43471be03200d9faf0be0a91de94de5377"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-sqlite3/@v/v1.14.52.mod",
+    "sha256": "4c08597e14c92d9ed25f1bd14a2242198f0e3011964e798018abceb2ccbe82bf"
+  },
+  {
+    "file": "dependencies/proxy/github.com/mattn/go-sqlite3/@v/v1.14.52.zip",
+    "sha256": "ebd1fef8e9434fbdc2c94e35b9991df62d472c00170f57fc4f75daa69f658a1b"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/go-sqlite3-wasm/v6/@v/v6.3.35304.info",
+    "sha256": "871a9e3bba4be13490f7cfb6599b2f962b78a869042da89834e7ce580484d782"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/go-sqlite3-wasm/v6/@v/v6.3.35304.mod",
+    "sha256": "d4ac8a878975abd724f783cd7e9974bef39cc33d941786169a0f2f98fe680aed"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/go-sqlite3-wasm/v6/@v/v6.3.35304.zip",
+    "sha256": "5364fcff7c7911d3a804a2d585dc079891f9517202b5a0b96e5f94fdbe0a5218"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/go-sqlite3/@v/v0.35.6.info",
+    "sha256": "ffb90573b05d7959af4bd4f0de5ac7e3415c4d5ec744e6fff5718eff13ec653b"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/go-sqlite3/@v/v0.35.6.mod",
+    "sha256": "596481127401081de676fdd57e5e2810e18cba80a1ca07c72cace82cdc0ecda1"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/go-sqlite3/@v/v0.35.6.zip",
+    "sha256": "2c756aa9b2ed2e907fcb295b71f7db7cc7f1c75eb3d412af32730bb3f6fc33e5"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/julianday/@v/v1.0.0.info",
+    "sha256": "ce8f9a5f2cd21566558821254b64878a3a238c2f062c9ec0fc1fd677b8c66f28"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/julianday/@v/v1.0.0.mod",
+    "sha256": "59aaafe38567d1f3d09ab7885ef06519e52d6008bfd74d3ecb108010854e1940"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/julianday/@v/v1.0.0.zip",
+    "sha256": "f66d44790fa44062db6e03b8987dd24ec7e73ddf0fb78835e5e19d2bf3eb34e7"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/sort/@v/v1.0.2.info",
+    "sha256": "77be3eaf42f9e8836594af3aba587342b200e6be0d42c195eb7b5fe6a230cf61"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/sort/@v/v1.0.2.mod",
+    "sha256": "4d82cc7e3d5457713b72033f8999f1bccd29b76537a6110d569cb0fe7fd9e481"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/sort/@v/v1.0.2.zip",
+    "sha256": "bc61d141b2db1425a6c5811f3e862b86bfcd35dbf1e1ab383f1ff94e6aed17af"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/wasm2go/@v/v0.4.15.info",
+    "sha256": "1333b4c585618d4a4dfb409eb916dfdfeaa50de4bfb9c77a96f5df3049213425"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/wasm2go/@v/v0.4.15.mod",
+    "sha256": "e204df5c81b2e9776e9b3511b4768ba0ae9b043789ea07f8f89a83f4c2552737"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/wasm2go/@v/v0.4.15.zip",
+    "sha256": "beb142b7be5f538cc33440229dab053845729ac83025765646536b7a44a0713c"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/wbt/@v/v1.0.0.info",
+    "sha256": "5737eccdfece242bdccd4bbe3e4097216916062ffe3d35333f5b1bd07e6e0ebe"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/wbt/@v/v1.0.0.mod",
+    "sha256": "65b8d9b14b4c825aeba85510c2654ff0ccd5b8456727aecc6902d86b52b591ec"
+  },
+  {
+    "file": "dependencies/proxy/github.com/ncruces/wbt/@v/v1.0.0.zip",
+    "sha256": "e031984c0d738ce9b3ccd19bf06f594fc230db4001182a2c5c7113d30da2717c"
+  },
+  {
+    "file": "dependencies/proxy/github.com/petermattis/goid/@v/v0.0.0-20260820044319-269ab09b5261.info",
+    "sha256": "f30edf2ce109f1dce1d6931ccf0cd1cd4839b44764578e2042525056a55f7d94"
+  },
+  {
+    "file": "dependencies/proxy/github.com/petermattis/goid/@v/v0.0.0-20260820044319-269ab09b5261.mod",
+    "sha256": "7a9463cb866b7b5560996d7d0ce2491c0fcd8c1edae80ad5f159b54223ca9e1d"
+  },
+  {
+    "file": "dependencies/proxy/github.com/petermattis/goid/@v/v0.0.0-20260820044319-269ab09b5261.zip",
+    "sha256": "fd753d0c037da0a83bddecdafe5c1f53a557905d2c70d7978ffd75053aafa9e8"
+  },
+  {
+    "file": "dependencies/proxy/github.com/pkg/errors/@v/v0.9.1.info",
+    "sha256": "5d8c58c4cf06efa07ac322b254ced1c5a61a2515113f54f7b63c324a144c1280"
+  },
+  {
+    "file": "dependencies/proxy/github.com/pkg/errors/@v/v0.9.1.mod",
+    "sha256": "df28c6a823f181d76179697177c0c5943c6ffb38f3c10b2dc53be360ee7d4589"
+  },
+  {
+    "file": "dependencies/proxy/github.com/pkg/errors/@v/v0.9.1.zip",
+    "sha256": "d4c36b8bcd0616290a3913215e0f53b931bd6e00670596f2960df1b44af2bd07"
+  },
+  {
+    "file": "dependencies/proxy/github.com/pmezard/go-difflib/@v/v1.0.0.info",
+    "sha256": "97cbb0239d80e5221efd1f0aa645d120272bd3ee7975bd654f07a8ed0c2c2adc"
+  },
+  {
+    "file": "dependencies/proxy/github.com/pmezard/go-difflib/@v/v1.0.0.mod",
+    "sha256": "74b2e766eb215377864d587badf57e95521f692d2a7860b3c7759093f9c9bec2"
+  },
+  {
+    "file": "dependencies/proxy/github.com/pmezard/go-difflib/@v/v1.0.0.zip",
+    "sha256": "de04cecc1a4b8d53e4357051026794bcbc54f2e6a260cfac508ce69d5d6457a0"
+  },
+  {
+    "file": "dependencies/proxy/github.com/psanford/httpreadat/@v/v0.1.0.info",
+    "sha256": "9fa41713fcd8a10c048173a732a7d485a39d21fb815ffafd5274c0fe79bb0f8e"
+  },
+  {
+    "file": "dependencies/proxy/github.com/psanford/httpreadat/@v/v0.1.0.mod",
+    "sha256": "97a54c39265a9549ccbc4360988aaed38f8d517f59cb2b4931a0a39a549123f4"
+  },
+  {
+    "file": "dependencies/proxy/github.com/psanford/httpreadat/@v/v0.1.0.zip",
+    "sha256": "006c82012f62cf3e4890b6d4c2a91e92553da82a6e7978f638cf1905546e4e9e"
+  },
+  {
+    "file": "dependencies/proxy/github.com/rs/xid/@v/v1.6.0.info",
+    "sha256": "5fbf553a7c918ce5139da754ce071e8b6cd289fe8385ced3136fb2d28f879449"
+  },
+  {
+    "file": "dependencies/proxy/github.com/rs/xid/@v/v1.6.0.mod",
+    "sha256": "2ebd8a4c48bf66680d0fba5ca0d9ea1ec134396497802c75f3b39683e6e662ef"
+  },
+  {
+    "file": "dependencies/proxy/github.com/rs/xid/@v/v1.6.0.zip",
+    "sha256": "395b1caa8a7e835e4721291e629dac4f6608db3918d6fe1eb2ed5e7561b62eb2"
+  },
+  {
+    "file": "dependencies/proxy/github.com/rs/zerolog/@v/v1.35.1.info",
+    "sha256": "ec751150a302f7e7d289f5fe2f761b920b407f09d0a57e9d14fe5ce9db86ffbf"
+  },
+  {
+    "file": "dependencies/proxy/github.com/rs/zerolog/@v/v1.35.1.mod",
+    "sha256": "5b53a8134965f077ed8ced9b5e277592b1ce8bba52ff346d3ee070369468bcf6"
+  },
+  {
+    "file": "dependencies/proxy/github.com/rs/zerolog/@v/v1.35.1.zip",
+    "sha256": "91ae94de887e861afc3c9aff30a0ec3b7563c1d330fe2f619dd16b1b51684d2f"
+  },
+  {
+    "file": "dependencies/proxy/github.com/sergi/go-diff/@v/v1.3.1.info",
+    "sha256": "b1bd6f40f6358814cd910aa993788d1fe9881f0ed0e0bfbbab1ef3a3025bc88d"
+  },
+  {
+    "file": "dependencies/proxy/github.com/sergi/go-diff/@v/v1.3.1.mod",
+    "sha256": "d0d5157e1c0396fdd42bd849a87542a5c34e55d81efa9c25177edf0884d65784"
+  },
+  {
+    "file": "dependencies/proxy/github.com/sergi/go-diff/@v/v1.3.1.zip",
+    "sha256": "b7a2378f17322fd5f08cf69f5bf1a3ba2bcb84704960ba23230305f6dfec4f98"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.10.0.info",
+    "sha256": "28c0b78d7acbcfaece7c4dd3dcc2c11e33c698871c4883e5a5b5c0899004293b"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.10.0.mod",
+    "sha256": "c0a648a037da54a6b02e8a811b1d3917d49dc4e1841cd756f28f0c4f1593933c"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.10.0.zip",
+    "sha256": "36c87573527a97ce97fc15ce2a101e65e5ebb350db142d09f633580cb8d5c839"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.12.0.info",
+    "sha256": "8ae284eee04dc6ae479a22023b866c84f26ac23ad114f93772e6dac61dcc0851"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.12.0.mod",
+    "sha256": "ddba881221554296b1d38ba315e88bd45e9403b74f7019a93fcb68c490b1d1b4"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.12.0.zip",
+    "sha256": "f0c60295b42ab8de3ddde4b5030899380ac477fb0503f444e3159d12b5332d8f"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.7.1.info",
+    "sha256": "f7b2fdc7be666314fe81c12e646050e2aec7781b85d95815894bb23a30053276"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.7.1.mod",
+    "sha256": "fff8168d98e6a07156c454a1b6e925509f3177e96c155516d7f96b4079cca3bf"
+  },
+  {
+    "file": "dependencies/proxy/github.com/stretchr/testify/@v/v1.7.1.zip",
+    "sha256": "d78938d7c60cb8cb6810f7fd5c2f7f7ff62091e483ca3610af69c3920011dc44"
+  },
+  {
+    "file": "dependencies/proxy/github.com/vektah/gqlparser/v2/@v/v2.5.27.info",
+    "sha256": "7e46a7c09426ff1f439198360801f84c457542e2b5afb9a84cf493c008e67a12"
+  },
+  {
+    "file": "dependencies/proxy/github.com/vektah/gqlparser/v2/@v/v2.5.27.mod",
+    "sha256": "faffd2e58dc0f1ab58d5b95709dd8b48bf3d9857ef1d218d05c50f6870cd505f"
+  },
+  {
+    "file": "dependencies/proxy/github.com/vektah/gqlparser/v2/@v/v2.5.27.zip",
+    "sha256": "e08e0cf6a1f7a67c40fe6bfe6ae918a7163a43359498b238301e9a7ea967e720"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/libsignal/@v/v0.2.2.info",
+    "sha256": "d9921bce80b410743a4d68dbbc7f6feb75c473db43ca5af5a6e4065dea389edb"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/libsignal/@v/v0.2.2.mod",
+    "sha256": "5db1f627fec2215035f9e1f25950f9251268d612319952dd77df9ccd6720329e"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/libsignal/@v/v0.2.2.zip",
+    "sha256": "12b60a71250f3996749acb2ba454a34d360801ef314d3e32c7dbb4da240a807b"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/util/@v/v0.10.1.info",
+    "sha256": "d63b080b39432ff00aa4328d1c5d49bc03f30fafed3d4f42e2848ba5e60ab69d"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/util/@v/v0.10.1.mod",
+    "sha256": "a8bc3be2519b5bc5f40955e3fa65e79cfd190b56dcc825ded6de40cdb315018f"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/util/@v/v0.10.1.zip",
+    "sha256": "8c6c74612df1673fc69480ecb022ca042f9e8f0faeeccdc3c313d8e5b27951ac"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/whatsmeow/@v/v0.0.0-20260929112325-8b41cfe6d9c4.info",
+    "sha256": "516cdb4a681cdbaaed9ec1e7a57d4806e5f597d64896b87e69ed9e5d318c9ded"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/whatsmeow/@v/v0.0.0-20260929112325-8b41cfe6d9c4.mod",
+    "sha256": "91a7e7d12b773564c3e5a52a3a249335a937cb38f8fdec8e66baef7f92f8b873"
+  },
+  {
+    "file": "dependencies/proxy/go.mau.fi/whatsmeow/@v/v0.0.0-20260929112325-8b41cfe6d9c4.zip",
+    "sha256": "895924791900fcaa5524ea6b60ef3029f8eba300bc0d03a1e488a9877ac202a9"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/crypto/@v/v0.52.0.info",
+    "sha256": "0ff3bb7444f676ed8e48de7ee061dbfee3b7a4ccd3df55b7b1ecfcb2e5e2357a"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/crypto/@v/v0.52.0.mod",
+    "sha256": "92137c1682719fd08f1a102fffcf3f45275d1c3aab815a5e110d58c42fcb0e49"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/crypto/@v/v0.52.0.zip",
+    "sha256": "a4dca44f467a3d8745aef41147c7bc6a90cdcfda9c42ae0585888bf046c7941e"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/crypto/@v/v0.57.0.info",
+    "sha256": "b5711159f8090af77db970774d86305791718dae7c54256a898a9b432e98375a"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/crypto/@v/v0.57.0.mod",
+    "sha256": "93438fc90cca15b1b253be9df648ca54fb80838400239cc294f794ca2f242575"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/crypto/@v/v0.57.0.zip",
+    "sha256": "856c916b92f1fc5b53983c04f6249f632f56c47ebc003bbcdfc503500dfb58b8"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/exp/@v/v0.0.0-20260908205506-85c1c2202aba.info",
+    "sha256": "6d3ca783dfaed9e0eaa1fe76c6eadc3b056d5e18821d8bdd74950e01e7efd3c9"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/exp/@v/v0.0.0-20260908205506-85c1c2202aba.mod",
+    "sha256": "aba4b65ccaa5b38b2bc6a07c3e059a7963c766f7a934393dbe1c1075215d85c7"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/exp/@v/v0.0.0-20260908205506-85c1c2202aba.zip",
+    "sha256": "47318373d2349a65c11daee4239024de4170ced40d9c23add5523c78b5a13c07"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/mod/@v/v0.41.0.info",
+    "sha256": "bed4e9e321ace8501613625b04436dbbaebc1821d01b9bc5306da23fcc9a7dfc"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/mod/@v/v0.41.0.mod",
+    "sha256": "fc5b64ef51fd92f4b8763ebbd6fa95a70069d299c7de0f7c66661ef24283eb0c"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/mod/@v/v0.41.0.zip",
+    "sha256": "201e678d0a35b18b246abe58d80017b75d60be21cbaf4cbb9e963b48872565a9"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.58.0.info",
+    "sha256": "23ef0a0b81202308d951cf9b227d79df6035107e71e1d5cc02621610c3da8290"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.58.0.mod",
+    "sha256": "7527ef545bf4e1ec8e38b4afddcc46480d75d3c2ae38a80cff1831d3152fabfe"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.58.0.zip",
+    "sha256": "aa78bbf8d55db3e6995630165e2bcd7dce6d0b8831c166fa03b80ac94fb650e7"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.59.0.info",
+    "sha256": "f2f059aefc08c37826ae9739869ef4d9324e147c9897a79a5de3f2e2d2f00900"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.59.0.mod",
+    "sha256": "f7034587fa012c43de66d8c276ddab161032931abf116a629daa8d66f1c80023"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.59.0.zip",
+    "sha256": "1dc3bf31fcebe80d393288ac8fe5cac7f0e82e9b3a2630021dcdf5ffbfa3f601"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sync/@v/v0.23.0.info",
+    "sha256": "0842b53e293bdd9e9574ddbf33bb39538b447cf336b6f385e69928b5df4cf5ff"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sync/@v/v0.23.0.mod",
+    "sha256": "febf4fed5dc12c0de24528f7065bf071cc74a2424070194aaf24617b91066cda"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sync/@v/v0.23.0.zip",
+    "sha256": "c19a11baba5c1a093cb4fd2f6d0d8d79673c97a82cb0fe2d693c9b6ad84f0f82"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.29.0.info",
+    "sha256": "10b07aabdf2aea556f31b7b84410bdaa22d62f5dfdd9df01b133da41b3abdf80"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.29.0.mod",
+    "sha256": "d227b325f621f4ebe28d39ba773ea99b870f393b7c09c34592c365b16dd560de"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.29.0.zip",
+    "sha256": "1d759c017d09328a4dacdd4a1a0170cf21641995c6e3ca1f96213369d73c6846"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.48.0.info",
+    "sha256": "f52c0a8146a472f3c780756e50b62c11d7fcd1f29dd379a962b5cb5cc392cbec"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.48.0.mod",
+    "sha256": "9522f4c9806d1c26586ea80fa56292929bd295865e71981927f52996c6b1c831"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.48.0.zip",
+    "sha256": "3a47e06431ba1e24d5b2aca3a7ce31fd13faff34df3e5d8e63f105ff9d0c1786"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.6.0.info",
+    "sha256": "0485e4a15a185169a81453fffe74155c8bb5de968f2dc7b42f3ae2907c5e7bd8"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.6.0.mod",
+    "sha256": "f033333096fe198f3151deed93f2deba74e50bbfe7739134045bc3b7ce4a5024"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/sys/@v/v0.6.0.zip",
+    "sha256": "8c15860e3850e3cea5a7186bb79b8cf98f513d9ac5498099d3bddfd49c6dfc3f"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/term/@v/v0.46.0.info",
+    "sha256": "9cc8085269ff2b8089d9b7e91363a1dd9d822d94e5c33c79bfc768cae41de5eb"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/term/@v/v0.46.0.mod",
+    "sha256": "f94c7bd036a7d189950b7759a3f105e7bcc7164dc89d80d186c7e8a903d6c332"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/term/@v/v0.46.0.zip",
+    "sha256": "9147fdd982f1aed1392183d5b48055f4f74c85d496604766c7f0b1d3bbd61c7c"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/text/@v/v0.42.0.info",
+    "sha256": "5b9b61f55293ec161f0cce9c4357abf80071864a801f8971490c68b84019df87"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/text/@v/v0.42.0.mod",
+    "sha256": "4756c4b8eeeae2a20cb43c198c10701d20c53493bd90b91c6632153c9cbac240"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/text/@v/v0.42.0.zip",
+    "sha256": "a7b64e003056b6470303f408202098d8f3714a115f23091b8cac85edeb265476"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/@v/v0.49.0.info",
+    "sha256": "96121a4335b289b365ce47b0aebecfa1101ecc8cc0bb68498cde42b165e4f0d2"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/@v/v0.49.0.mod",
+    "sha256": "86e34efea35b8aa52aabff0ea18c0ef217f074dff67ef7b4c700ae833968cf62"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/@v/v0.49.0.zip",
+    "sha256": "babd2d5a0ccf4eac49b6c9785be2b9e39b261097ad8b8a6b92578b9f248703d5"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/@v/v0.50.0.info",
+    "sha256": "674c0a5eb1a3f3ff688e67b2241283b68e7c2ca660aa37ad1ffc40a4ae6630de"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/@v/v0.50.0.mod",
+    "sha256": "3af7ad5226f7a05b4b340e29692c9262fdd4852337ce94ca4a9c8e5de32f1cb1"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/@v/v0.50.0.zip",
+    "sha256": "74da5c066c6e4e1a44eff7938cb180341a39c5136852c41660c070fd5b850a03"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/go/expect/@v/v0.1.1-deprecated.info",
+    "sha256": "f17b12bec957629a6da655b8c242d605831ac21f5d503265d2a34040a62e3599"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/go/expect/@v/v0.1.1-deprecated.mod",
+    "sha256": "0995d960f35334cd5c1caa9748e280ce531f2e06fe092466c77817ceb7a32f08"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/go/expect/@v/v0.1.1-deprecated.zip",
+    "sha256": "b2389159ddd768c6bd83a0cc92bbf9be01c32ca973c366fc224b79762d90dd79"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/go/packages/packagestest/@v/v0.1.1-deprecated.info",
+    "sha256": "9490716febde2ff69de31b8028d33c4bf33f1d7c687bbf788c98c25ce3d4d79e"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/go/packages/packagestest/@v/v0.1.1-deprecated.mod",
+    "sha256": "f61084d3a3625bc96725aaf19c6a0341ea42715254bc1e617943d2ff836383fd"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/tools/go/packages/packagestest/@v/v0.1.1-deprecated.zip",
+    "sha256": "15792a78ef9338b2c08d5010b24211f85c4d39e8c31db316f1ca4a891605ed01"
+  },
+  {
+    "file": "dependencies/proxy/google.golang.org/protobuf/@v/v1.36.11.info",
+    "sha256": "2156715d128777c2a6fae6107d12a0ab60c2b1deed4fba5a2b2481c68911082a"
+  },
+  {
+    "file": "dependencies/proxy/google.golang.org/protobuf/@v/v1.36.11.mod",
+    "sha256": "a75c105a852fbd8da8d8cfac09c2eab9a206cfd27ed37c973737e23f632ca96e"
+  },
+  {
+    "file": "dependencies/proxy/google.golang.org/protobuf/@v/v1.36.11.zip",
+    "sha256": "14983d36c56a814ed91b6d652f2b8f895baba1b84eb43b28a0b132c8637cd274"
+  },
+  {
+    "file": "dependencies/proxy/google.golang.org/protobuf/@v/v1.36.12.info",
+    "sha256": "adcdfa99465b9d87edd7d05d540d6e0ce94a04824fe283552410f2c50188f51d"
+  },
+  {
+    "file": "dependencies/proxy/google.golang.org/protobuf/@v/v1.36.12.mod",
+    "sha256": "a75c105a852fbd8da8d8cfac09c2eab9a206cfd27ed37c973737e23f632ca96e"
+  },
+  {
+    "file": "dependencies/proxy/google.golang.org/protobuf/@v/v1.36.12.zip",
+    "sha256": "68f8a3174aff42950fd9bd02c11b45c6986eb8060508d124d1c3dd6bf86b9be6"
+  },
+  {
+    "file": "dependencies/proxy/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.info",
+    "sha256": "8a334d0bfa47d78ee88107cf59eabc017af333b5a1043dfb36b3983a16f51df6"
+  },
+  {
+    "file": "dependencies/proxy/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.mod",
+    "sha256": "21579860a20306fcf43b1bd234d1fba319499c77611b71c05f9bf3ba90dab939"
+  },
+  {
+    "file": "dependencies/proxy/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.zip",
+    "sha256": "acf19ccb4fca983b234a39ef032faf9ab70e759680673bb3dff077e77fee20fe"
+  },
+  {
+    "file": "dependencies/proxy/gopkg.in/yaml.v3/@v/v3.0.1.info",
+    "sha256": "0cdb0c9ac8c3b25dbd420a86ab27debfa469a8b48ee10560224704c2852ac6c0"
+  },
+  {
+    "file": "dependencies/proxy/gopkg.in/yaml.v3/@v/v3.0.1.mod",
+    "sha256": "21579860a20306fcf43b1bd234d1fba319499c77611b71c05f9bf3ba90dab939"
+  },
+  {
+    "file": "dependencies/proxy/gopkg.in/yaml.v3/@v/v3.0.1.zip",
+    "sha256": "aab8fbc4e6300ea08e6afe1caea18a21c90c79f489f52c53e2f20431f1a9a015"
+  },
+  {
+    "file": "dependencies/proxy/lukechampine.com/adiantum/@v/v1.1.1.info",
+    "sha256": "08ed295d6c426dbaeab939f2ddd3889c21fff3c78c9ed5f92fda1b55ebde84f0"
+  },
+  {
+    "file": "dependencies/proxy/lukechampine.com/adiantum/@v/v1.1.1.mod",
+    "sha256": "2190a7e11c3330281edc954625a5eaf87c83ed247001370f7246d1075f5118c8"
+  },
+  {
+    "file": "dependencies/proxy/lukechampine.com/adiantum/@v/v1.1.1.zip",
+    "sha256": "ddf058440ad397f19f605f1cdd73397cc954c37d70ad8716e255c05f450b6ff4"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/decimal.c",
+    "sha256": "d4d75ad3f33212dd74bdc1550044c3524a1e7c75b1cb71ae500bda1f1421b5d0"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/ieee754.c",
+    "sha256": "3590427a41bdf476b119c77ae85a179785b0e9c548fd543ae084422b3ff043b5"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/mptest.c",
+    "sha256": "e8d5b5bf2a84d428b0115283383a9a42c865d3b65ca7aae35241a8f124448913"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/regexp.c",
+    "sha256": "3e3b176b31047ea01e5ec0653e5806a09f912ba0e9648f93ab33e34a5ec3e18e"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/series.c",
+    "sha256": "4bba693cfee707d060f4257b5f7e70ba4ac22054a5d42b95409cc056c67f4602"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/speedtest1.c",
+    "sha256": "b5eaf4bbcbb320fd8eb3f3e6c4cd5f51a64dd0cd70efe969634d1785e3419675"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/sqlite-autoconf-3530400.tar.gz",
+    "sha256": "0e9483900e92cd5de8fd48d16bf9200145a61f7fd5be542a5ac81d8a9516eb9c"
+  },
+  {
+    "file": "dependencies/sqlite-3.53.4/uint.c",
+    "sha256": "f30401ca32ed58efad924d31d92bf9e163d3c3214756d60cbc09bcf6b8220c37"
+  },
+  {
+    "file": "export-source.ps1",
+    "sha256": "3b9c5310114a35691cfa99a79e8ab6ee8d358dd26867ae99c77ff08aef2aff34"
+  },
+  {
+    "file": "go.mod",
+    "sha256": "67757702266f41a0ddc0f74d7364e9d34633a58a509e867689b1b3d2e7a6bbcb"
+  },
+  {
+    "file": "go.sum",
+    "sha256": "8ec2d2b309d13ce0dd4d0aff2f74595669197d6ffba6ef32a0f623f3e266b27a"
+  },
+  {
+    "file": "LICENSE",
+    "sha256": "c61f12da7cdad526bdcbed47a4c0a603e60dbbfdaf8b66933cd088e9132c303f"
+  },
+  {
+    "file": "logging.go",
+    "sha256": "6280ec4cb33f9dc7b2069b72e69352b42ee2cf0a9499734a352f6f44f87951c3"
+  },
+  {
+    "file": "main_test.go",
+    "sha256": "f05c525831e0876b9ff277c0665b30e68b0f4d32e6e78f18217c4324bf30d78c"
+  },
+  {
+    "file": "main.go",
+    "sha256": "a1e89df3c9a231a21621773aab4e53267aa0511bbaa0675f8bbdb456539c6b14"
+  },
+  {
+    "file": "README.md",
+    "sha256": "84b1911524e0ad525437a85dd09048a1fdeef63e7acb5c0f524fb0a9d19109be"
+  },
+  {
+    "file": "smoke_test.go",
+    "sha256": "2955d5192fce66b424d9019abf316ed9ab782ac2cb45ce9fc0061bc21c0e21e3"
+  },
+  {
+    "file": "storage_test.go",
+    "sha256": "a1e8f23b44f36331b0f0154ed2aa240e31f30f77fd4c7de24b439d04d92efae9"
+  },
+  {
+    "file": "storage.go",
+    "sha256": "7468025886f179e0e13b0d6fb1ef0d9d412a92c53f6d5cf059e9bc79045ed474"
+  },
+  {
+    "file": "STORE_PROTOCOL.md",
+    "sha256": "b0dfdddbd0b78fe8ee701e60a4ecb966db8078311e37953690e05b04e15472e5"
+  }
+]
