@@ -5,7 +5,7 @@
   },
   {
     "file": "account.go",
-    "sha256": "1bfda8894c5dabe21b5f0ef3aa9364711c30f34321511675b6c13dee74510aaa"
+    "sha256": "4ac908a5dd641a8ad64587c40183b202c7b70c591e12783cee123f0d1be7edb5"
   },
   {
     "file": "build.ps1",
@@ -762,6 +762,14 @@
   {
     "file": "dependencies/sqlite-3.53.4/uint.c",
     "sha256": "f30401ca32ed58efad924d31d92bf9e163d3c3214756d60cbc09bcf6b8220c37"
+  },
+  {
+    "file": "destinations_test.go",
+    "sha256": "0d14533fad27990c4f2062f44e8c6d4b60707824cd3a49d94d2f227a874736eb"
+  },
+  {
+    "file": "destinations.go",
+    "sha256": "fcff9cb76d5eec5f82251ba0152efbb21b2986f43cb4933404250135a0dc1976"
   },
   {
     "file": "export-source.ps1",

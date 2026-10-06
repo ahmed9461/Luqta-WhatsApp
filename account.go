@@ -7,7 +7,6 @@ import (
 	"encoding/json"
 	"errors"
 	"regexp"
-	"strings"
 	"sync"
 
 	"go.mau.fi/whatsmeow"
@@ -77,20 +76,7 @@ func (a *account) command(ctx context.Context, method string, args json.RawMessa
 		if json.Unmarshal(args, &input) != nil {
 			return nil, errors.New("invalid_request")
 		}
-		phone := strings.NewReplacer(" ", "", "(", "", ")", "", "+", "", "-", "", "\t", "", "\n", "").Replace(input.Input)
-		if !phonePattern.MatchString(phone) {
-			return nil, errors.New("invalid_destination")
-		}
-		users, err := a.client.IsOnWhatsApp(ctx, []string{phone})
-		if err != nil {
-			return nil, err
-		}
-		for _, user := range users {
-			if user.IsIn {
-				return destination{user.JID.ToNonAD().String(), "+" + phone, false}, nil
-			}
-		}
-		return nil, errors.New("invalid_destination")
+		return resolveDestination(ctx, a.client, input.Input, *a.client.Store.ID, a.client.Store.LID)
 	case "deliver":
 		var input delivery
 		if json.Unmarshal(args, &input) != nil {
