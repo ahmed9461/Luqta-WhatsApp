@@ -8,7 +8,7 @@ The helper is licensed GPL-3.0-only. Whatsmeow is MPL-2.0 and its Signal depende
 is GPL-3.0. Dependency licenses must accompany binary distributions. This repository
 contains only this component; it contains no Luqta application source or credentials.
 
-Build on Windows x64 with official Go 1.27.1 and PowerShell 7:
+Build on Windows x64 with official Go 1.27.3 and PowerShell 7:
 
 ```powershell
 ./build.ps1

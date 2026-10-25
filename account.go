@@ -8,6 +8,7 @@ import (
 	"errors"
 	"regexp"
 	"sync"
+	"sync/atomic"
 
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/store/sqlstore"
@@ -17,11 +18,12 @@ import (
 )
 
 type account struct {
-	bridge *bridge
-	db     *sql.DB
-	client *whatsmeow.Client
-	key    []byte
-	mu     sync.Mutex
+	captureScope atomic.Pointer[captureScope]
+	bridge       *bridge
+	db           *sql.DB
+	client       *whatsmeow.Client
+	key          []byte
+	mu           sync.Mutex
 }
 type destination struct {
 	ID    string `json:"id"`
@@ -33,6 +35,8 @@ func (a *account) command(ctx context.Context, method string, args json.RawMessa
 	a.mu.Lock()
 	defer a.mu.Unlock()
 	switch method {
+	case "capture.configure", "capture.read", "capture.ack":
+		return a.captureCommand(ctx, method, args)
 	case "connect":
 		var input struct {
 			Root string `json:"root"`
@@ -42,6 +46,7 @@ func (a *account) command(ctx context.Context, method string, args json.RawMessa
 		}
 		return nil, a.connect(ctx, input.Root)
 	case "disconnect":
+		a.captureScope.Store(nil)
 		if a.client != nil {
 			if err := a.client.Logout(ctx); err != nil {
 				return nil, err
@@ -92,6 +97,11 @@ func (a *account) command(ctx context.Context, method string, args json.RawMessa
 			return nil, err
 		}
 		return nil, releaseSend(ctx, a.db, input)
+	case "replies", "reply.ack":
+		if a.db == nil {
+			return nil, errors.New("not_connected")
+		}
+		return replyCommand(ctx, a.db, method, args)
 	case "close":
 		a.closeLocked()
 		return nil, nil
@@ -135,13 +145,49 @@ func (a *account) connect(ctx context.Context, root string) error {
 	client.ManualHistorySyncDownload = true
 	client.UseRetryMessageStore = true
 	client.AutomaticMessageRerequestFromPhone = false
-	client.AddEventHandler(func(event any) {
-		switch event.(type) {
+	client.EnableDecryptedEventBuffer = true
+	database := a.db
+	client.AddEventHandlerWithSuccessStatus(func(event any) bool {
+		switch typed := event.(type) {
+		case *events.Message:
+			if client.Store.ID != nil {
+				// PN/LID are protocol aliases; normalize through the authenticated
+				// device's mapping, never names or user-provided identifiers.
+				copy := *typed
+				originalChat := copy.Info.Chat.ToNonAD().String()
+				if alt, err := client.Store.GetAltJID(a.bridge.ctx, copy.Info.Chat); err == nil && !alt.IsEmpty() {
+					if copy.Info.Chat.Server == types.HiddenUserServer {
+						copy.Info.Chat = alt
+					} else {
+						originalChat = alt.ToNonAD().String()
+					}
+				}
+				if copy.Info.Sender.Server == types.HiddenUserServer {
+					if alt, err := client.Store.GetAltJID(a.bridge.ctx, copy.Info.Sender); err == nil && !alt.IsEmpty() {
+						copy.Info.Sender = alt
+					}
+				}
+				// Persistence goes directly to the protected account DB, never logs.
+				// Failed persistence withholds the transport ACK; the encrypted SDK
+				// event buffer can replay it using the same incoming identity.
+				if err := receiveReplyWithAlternate(a.bridge.ctx, database, client.Store.ID.ToNonAD().String(), &copy, originalChat); err != nil {
+					return false
+				}
+				added, err := receiveCaptureCommand(a.bridge.ctx, database, a.captureScope.Load(), client.Store.ID.ToNonAD().String(), &copy, originalChat)
+				if err != nil {
+					return false
+				}
+				if added {
+					_ = a.bridge.emit(map[string]any{"method": "capture.available"})
+				}
+				return true
+			}
 		case *events.Connected:
 			a.bridge.state("ready", client.Store.ID.ToNonAD().String(), "")
 		case *events.Disconnected, events.PermanentDisconnect, *events.PairError:
 			a.bridge.state("disconnected", "", "")
 		}
+		return true
 	})
 	a.client = client
 	if device.ID == nil {
@@ -196,6 +242,7 @@ func groupSendable(group *types.GroupInfo, phone, lid types.JID) bool {
 	return false
 }
 func (a *account) closeLocked() {
+	a.captureScope.Store(nil)
 	if a.client != nil {
 		a.client.Disconnect()
 		a.client = nil

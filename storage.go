@@ -42,6 +42,13 @@ func openDatabase(ctx context.Context, root string, key []byte) (*sql.DB, error)
 	if err = container.Upgrade(ctx); err == nil {
 		_, err = db.ExecContext(ctx, `CREATE TABLE IF NOT EXISTS luqta_sends (id TEXT PRIMARY KEY, account TEXT NOT NULL, destination TEXT NOT NULL, message BLOB NOT NULL, confirmed BOOLEAN NOT NULL DEFAULT FALSE)`)
 	}
+	if err == nil {
+		_, err = db.ExecContext(ctx, `CREATE TABLE IF NOT EXISTS luqta_capture_commands (sequence INTEGER PRIMARY KEY AUTOINCREMENT, id TEXT NOT NULL UNIQUE, scope TEXT NOT NULL, acknowledged BOOLEAN NOT NULL DEFAULT FALSE);
+            CREATE INDEX IF NOT EXISTS luqta_capture_due ON luqta_capture_commands(acknowledged,sequence);
+            CREATE TABLE IF NOT EXISTS luqta_screenshot_routes (id TEXT PRIMARY KEY, account TEXT NOT NULL, destination TEXT NOT NULL, session TEXT NOT NULL);
+            CREATE TABLE IF NOT EXISTS luqta_replies (sequence INTEGER PRIMARY KEY AUTOINCREMENT, id TEXT NOT NULL UNIQUE, session TEXT NOT NULL, payload BLOB NULL, acknowledged BOOLEAN NOT NULL DEFAULT FALSE);
+            CREATE INDEX IF NOT EXISTS luqta_replies_due ON luqta_replies(session,acknowledged,sequence);`)
+	}
 	if err != nil {
 		db.Close()
 		return nil, errors.New("storage")

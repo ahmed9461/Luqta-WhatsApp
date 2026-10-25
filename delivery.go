@@ -25,6 +25,7 @@ type delivery struct {
 	Destination  string `json:"destination"`
 	File         string `json:"file"`
 	AllowNewSend bool   `json:"allowNewSend"`
+	Session      string `json:"session"`
 }
 type sendRecord struct {
 	Account, Destination string
@@ -194,6 +195,17 @@ func deliverOnce(ctx context.Context, db *sql.DB, d delivery, prepare func(conte
 			return "", errors.New("storage")
 		}
 		r = &sendRecord{Account: d.Account, Destination: d.Destination, Message: body}
+	}
+	// Preserve a compact immutable screenshot route even after releasing the
+	// encrypted image receipt. Reserve before relay so immediate replies match.
+	if d.Session != "" {
+		if _, err = db.ExecContext(ctx, `INSERT OR IGNORE INTO luqta_screenshot_routes(id,account,destination,session) VALUES(?,?,?,?)`, d.ID, d.Account, d.Destination, d.Session); err != nil {
+			return "", errors.New("storage")
+		}
+		var account, destination, session string
+		if db.QueryRowContext(ctx, `SELECT account,destination,session FROM luqta_screenshot_routes WHERE id=?`, d.ID).Scan(&account, &destination, &session) != nil || account != d.Account || destination != d.Destination || session != d.Session {
+			return "", errors.New("route_changed")
+		}
 	}
 	if err = relay(ctx, r.Message); err != nil {
 		return "pending", nil

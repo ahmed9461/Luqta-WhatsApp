@@ -9,9 +9,12 @@ Commands:
 | `connect` | `root`: absolute private state directory | null; pairing/connection state arrives separately |
 | `disconnect` | empty object | null after explicit account logout |
 | `destinations` | empty object | sendable joined groups with `id`, `title`, `group` |
-| `resolve` | `input`: E.164 phone number | one destination object |
+| `resolve` | `input`: official group invite, group ID or E.164 phone number | one destination object |
 | `deliver` | `id`, `account`, `destination`, `file`, `allowNewSend` | object with `status` (`confirmed`, `pending`, `uncertain`) and numeric-only `timing` |
 | `release` | `root`, `id`, `account`, `destination` | null; releases only confirmed metadata after durable host cleanup, without network connection |
+| `replies` / `reply.ack` | owning `session`; ACK also has `id` | bounded screenshot-reply inbox / durable ACK |
+| `capture.configure` | nullable `scope`: hash, session, account, destination, command | selected-chat exact text filter; null disables |
+| `capture.read` / `capture.ack` | empty object / hashed `id` | bounded pending identities / durable ACK |
 | `close` | empty object | null after durable writes; closes transport without logout |
 
 State events have `method: "state"` and `args: { step, account?, qr? }`. Steps are `disconnected`, `connecting`, `qr`, and `ready`. QR is transient pairing material: display it locally, never save it or include it in diagnostics.
@@ -29,3 +32,5 @@ Expected response:
 ```json
 {"id":"offline-test","result":null}
 ```
+
+Capture availability events use `method: "capture.available"` without text. The encrypted DB retains hashed identity dedup metadata. Ordinary/foreign-chat text is discarded by the handler. Self and remote text messages are allowed; edits and media captions are ignored.

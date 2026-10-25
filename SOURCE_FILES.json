@@ -5,15 +5,23 @@
   },
   {
     "file": "account.go",
-    "sha256": "4ac908a5dd641a8ad64587c40183b202c7b70c591e12783cee123f0d1be7edb5"
+    "sha256": "20ec707d175fa77f513e39a520fcd16337d375eb751029b05b916c29d4562831"
   },
   {
     "file": "build.ps1",
-    "sha256": "79331a786edccb5f55278377b24bc5af6a5589d48a01df0152c21dc834310fa4"
+    "sha256": "35e173b980aefcab3ffd22f0302b2d700d180a50370c7933c73db558fa1f406a"
+  },
+  {
+    "file": "capture_commands_test.go",
+    "sha256": "1eb1ba1c49380f9dbc07f791db1ab6fee3990df32910e3776406d8f013d275a5"
+  },
+  {
+    "file": "capture_commands.go",
+    "sha256": "96825391c92b4c9c4d9eb4a61cf42b22e8a80a6f3698d43359dd2466adac1470"
   },
   {
     "file": "CORRESPONDING_SOURCE.md",
-    "sha256": "a2799261630c38d5f4f5af137ddaed8d4d7f8276509903dd11382f66119fd00f"
+    "sha256": "b46e34e3af458ea84c76a7017f6804549c23d9e65826d55085ef072d156825a3"
   },
   {
     "file": "delivery_test.go",
@@ -21,7 +29,7 @@
   },
   {
     "file": "delivery.go",
-    "sha256": "b5e2254d122db94b91528b7a685845090633c22352c7feea0127c3c4d924894c"
+    "sha256": "e34e800cddc3c1981cebd033b5d9b8e6cc3095a5e2c76600f3136dedc04d6082"
   },
   {
     "file": "dependencies/proxy/filippo.io/edwards25519/@v/v1.2.0.info",
@@ -552,6 +560,18 @@
     "sha256": "1dc3bf31fcebe80d393288ac8fe5cac7f0e82e9b3a2630021dcdf5ffbfa3f601"
   },
   {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.60.0.info",
+    "sha256": "374e92c32cc0392f788b8904f77fd3d400df28def232813a9f2b3fa9e36205f0"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.60.0.mod",
+    "sha256": "f7034587fa012c43de66d8c276ddab161032931abf116a629daa8d66f1c80023"
+  },
+  {
+    "file": "dependencies/proxy/golang.org/x/net/@v/v0.60.0.zip",
+    "sha256": "052e0453db47a96ae9567503e7c95ea925ab52682cb1cec31250541f7160107e"
+  },
+  {
     "file": "dependencies/proxy/golang.org/x/sync/@v/v0.23.0.info",
     "sha256": "0842b53e293bdd9e9574ddbf33bb39538b447cf336b6f385e69928b5df4cf5ff"
   },
@@ -773,15 +793,15 @@
   },
   {
     "file": "export-source.ps1",
-    "sha256": "3b9c5310114a35691cfa99a79e8ab6ee8d358dd26867ae99c77ff08aef2aff34"
+    "sha256": "fc512d1e6f58321258b9dc402cc3ddc2533a0b48dc29875734a8560573504071"
   },
   {
     "file": "go.mod",
-    "sha256": "67757702266f41a0ddc0f74d7364e9d34633a58a509e867689b1b3d2e7a6bbcb"
+    "sha256": "7710ed4a13dc713cbeaaa99c48429daf12260e4e0f5e6d30a4a6947a1b472063"
   },
   {
     "file": "go.sum",
-    "sha256": "8ec2d2b309d13ce0dd4d0aff2f74595669197d6ffba6ef32a0f623f3e266b27a"
+    "sha256": "7943f4510813029b18c399870d828621417c287b5d80258f8dc92611db9c878c"
   },
   {
     "file": "LICENSE",
@@ -801,7 +821,15 @@
   },
   {
     "file": "README.md",
-    "sha256": "84b1911524e0ad525437a85dd09048a1fdeef63e7acb5c0f524fb0a9d19109be"
+    "sha256": "1ec0cfea2626ae643aa9667217c5f2283cf2610b79cd3a2e8043050389930fec"
+  },
+  {
+    "file": "replies_test.go",
+    "sha256": "796d470a132ee101af035d9cb94b3e55a44ff5813bad6dad032606e888dced8a"
+  },
+  {
+    "file": "replies.go",
+    "sha256": "0842362c00fbab59b1c6217fb721338be68436ec3b227ff04b85b39388143dc1"
   },
   {
     "file": "smoke_test.go",
@@ -813,10 +841,10 @@
   },
   {
     "file": "storage.go",
-    "sha256": "7468025886f179e0e13b0d6fb1ef0d9d412a92c53f6d5cf059e9bc79045ed474"
+    "sha256": "52bec0cb44c694ecc10b99361905b5f91c804adecaef2c9749d7e7f14c05afb6"
   },
   {
     "file": "STORE_PROTOCOL.md",
-    "sha256": "b0dfdddbd0b78fe8ee701e60a4ecb966db8078311e37953690e05b04e15472e5"
+    "sha256": "25e35770dcf78b015d8dc4f4be29d9809f14e362214fcd4ca65adc1e32ab53a0"
   }
 ]
